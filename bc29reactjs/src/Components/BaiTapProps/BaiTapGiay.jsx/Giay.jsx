@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 export default class Giay extends Component {
     
@@ -11,7 +11,7 @@ export default class Giay extends Component {
             <h4 className='card-title'>{name}</h4>
             <p className='card-text'> {price}$</p>
             <div className='mb-3'>{this.props.children}</div>
-            <button className='btn btn-info' onClick={()=> this.props.ClickDetail(description)}>XEM MO TA</button>
+            <button className='btn btn-info' onClick={()=> {this.props.ClickDetail(description)}}>XEM MO TA</button>
         </div>
     </div>
     )
