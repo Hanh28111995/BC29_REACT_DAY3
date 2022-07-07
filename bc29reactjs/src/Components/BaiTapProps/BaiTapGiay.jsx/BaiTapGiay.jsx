@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+ import React, { Component } from "react";
 
 import danhSachGiay from "../../../Data/data.json";
 import Giay from "./Giay";
@@ -10,9 +10,9 @@ export default class BaiTapGiay extends Component {
       return (
         <div className="col-4" key={ele.id}>
           <Giay ClickDetail={this.ClickDetail} item={ele}>
-            {this.colors.map((item) => {
+            {this.colors.map((item, index) => {
               return (
-                <span key={item.id} className={`badge badge-${item}`}>
+                <span key={index} className={`badge badge-${item}`}>
                   {item}
                 </span>
               );
