@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import BaiTapDienThoai from "./BaiTapDienThoai/BaiTapDienThoai";
 import BaiTapGiay from "./BaiTapGiay.jsx/BaiTapGiay";
 
 export default class BaiTapProps extends Component {
@@ -32,7 +33,7 @@ export default class BaiTapProps extends Component {
               aria-controls="v-pills-profile"
               aria-selected="false"
             >
-              Bai tap Modal
+              Bai tap dien thoai
             </a>
             <a
               className="nav-link"
@@ -43,7 +44,7 @@ export default class BaiTapProps extends Component {
               aria-controls="v-pills-messages"
               aria-selected="false"
             >
-              Bai tap dien thoai
+              Bai tap modal
             </a>
           </div>
         </div>
@@ -64,7 +65,8 @@ export default class BaiTapProps extends Component {
               role="tabpanel"
               aria-labelledby="v-pills-profile-tab"
             >
-              Bai tap Modal
+              <h4>Bai tap dien thoai</h4>
+              {/* <BaiTapDienThoai /> */}
             </div>
             <div
               className="tab-pane w3-animate-right fade"
@@ -72,7 +74,7 @@ export default class BaiTapProps extends Component {
               role="tabpanel"
               aria-labelledby="v-pills-messages-tab"
             >
-              Bai tap dien thoai
+              Bai tap modal
             </div>
           </div>
         </div>

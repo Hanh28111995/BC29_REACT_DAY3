@@ -4,7 +4,7 @@ import danhSachGiay from "../../../Data/data.json";
 import Giay from "./Giay";
 
 export default class BaiTapGiay extends Component {
-  colors = ["primary", "success", "danger"];
+   colors = ["primary", "success", "danger"];
   renderShoesList = () => {
     const content = danhSachGiay.map((ele) => {
       return (
@@ -15,21 +15,21 @@ export default class BaiTapGiay extends Component {
                 <span key={index} className={`badge badge-${item}`}>
                   {item}
                 </span>
-              );
+              )
             })}
           </Giay>
         </div>
-      );
-    });
+      )
+    })
     return content;
   };
 
-  ClickDetail = (description) => {
-    alert(description);
-    // console.log("1");
+  ClickDetail = (description,quantity) => {
+    alert(description+"Quantity: "+ quantity);
   };
 
   render() {
-    return <div className="row">{this.renderShoesList()}</div>;
-  }
+    return (
+    <div className="row">{this.renderShoesList()}</div>
+  )}
 }
