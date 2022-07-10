@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import BaiTapDienThoai from "./BaiTapDienThoai/BaiTapDienThoai";
-import BaiTapGiay from "./BaiTapGiay.jsx/BaiTapGiay";
+import BaiTapGiay from "./BaiTapGiay/BaiTapGiay";
+import BaiTapModal from "./BaiTapModal/BaiTapModal";
 
 export default class BaiTapProps extends Component {
   render() {
@@ -56,7 +57,6 @@ export default class BaiTapProps extends Component {
               role="tabpanel"
               aria-labelledby="v-pills-home-tab"
             >
-              <h4>Bai tap giay</h4>
               <BaiTapGiay />
             </div>
             <div
@@ -65,8 +65,7 @@ export default class BaiTapProps extends Component {
               role="tabpanel"
               aria-labelledby="v-pills-profile-tab"
             >
-              <h4>Bai tap dien thoai</h4>
-              {/* <BaiTapDienThoai /> */}
+              <BaiTapDienThoai />
             </div>
             <div
               className="tab-pane w3-animate-right fade"
@@ -74,7 +73,7 @@ export default class BaiTapProps extends Component {
               role="tabpanel"
               aria-labelledby="v-pills-messages-tab"
             >
-              Bai tap modal
+              <BaiTapModal />
             </div>
           </div>
         </div>
